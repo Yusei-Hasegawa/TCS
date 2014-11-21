@@ -11,11 +11,11 @@ public class TCScamera : MonoBehaviour {
 	}
 
 	void OuGUI(){
-		if(GUI.Button(new Rect(screenW/2,screenH/2,40,20),"▼")){
+		if(GUI.Button(new Rect(210,200,40,20),"▼")){
 			Application.LoadLevel("TCS");
 		}
 
-		if(GUI.RepeatButton(new Rect(screenW-screenW+45,screenH-70,40,20), "前")) {
+		if(GUI.RepeatButton(new Rect(200,200,40,20), "前")) {
 			Application.LoadLevel("TCS");
 		}
 	}
