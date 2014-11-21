@@ -3,6 +3,10 @@
 var smooth:int; // Determines how quickly object moves towards position
 private var targetPosition:Vector3;
 var speed = 5;
+
+function Start () {
+	targetPosition = Position.CP;
+}
  
 function Update () {
  
@@ -34,5 +38,6 @@ function Update () {
         }
  
         transform.position += (targetPosition - transform.position).normalized * speed * Time.deltaTime;
+        Position.CP = transform.position; 
  
 }
